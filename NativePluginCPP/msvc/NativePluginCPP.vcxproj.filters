@@ -17,7 +17,10 @@
     <ClInclude Include="..\src\NativePluginCPP.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\xxtea.h">
+    <ClInclude Include="..\src\aes\aes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xxtea\xxtea.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -25,7 +28,10 @@
     <ClCompile Include="..\src\NativePluginCPP.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\xxtea.c">
+    <ClCompile Include="..\src\aes\aes.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xxtea\xxtea.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
