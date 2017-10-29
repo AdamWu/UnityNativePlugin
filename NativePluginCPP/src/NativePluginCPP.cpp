@@ -59,7 +59,11 @@ int UNITY_INTERFACE_EXPORT UNITY_INTERFACE_API Decrypt(void* data, size_t inlen,
 
 int UNITY_INTERFACE_EXPORT UNITY_INTERFACE_API FreeMem(void** p)
 {
+	#if defined(_MSC_VER)
 	size_t size = _msize(*p);
+	#else 
+	size_t size = 0;
+	#endif
 	free(*p);
 	*p = NULL;
 	return size;
