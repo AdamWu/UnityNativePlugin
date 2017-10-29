@@ -16,6 +16,6 @@
 
 extern "C" float UNITY_INTERFACE_EXPORT UNITY_INTERFACE_API TestMultiply(float a, float b);
 		
-extern "C" int UNITY_INTERFACE_EXPORT UNITY_INTERFACE_API Encrypt(char* data, size_t len, void **result);
-extern "C" int UNITY_INTERFACE_EXPORT UNITY_INTERFACE_API Decrypt(char* data, size_t len, void **result);
+extern "C" int UNITY_INTERFACE_EXPORT UNITY_INTERFACE_API Encrypt(void* data, size_t len, void **result);
+extern "C" int UNITY_INTERFACE_EXPORT UNITY_INTERFACE_API Decrypt(void* data, size_t len, void **result);
 extern "C" int UNITY_INTERFACE_EXPORT UNITY_INTERFACE_API FreeMem(void** p);
